@@ -22,13 +22,13 @@ const HomeBanner = () => {
 
       <div className="flex z-20 w-[50%]">
         <Image
-          src="/dummy_hero_phone.png"
+          src="/images/dummy_hero_phone.png"
           alt=""
           className="-mr-32 z-10"
           width={300}
           height={300}
         />
-        <Image src="/dummy_hero_person.png" alt="" width={300} height={300} />
+        <Image src="/images/dummy_hero_person.png" alt="" width={300} height={300} />
         <div className="bg-secondary-blue h-[24rem] mt-14 rounded-r-xl w-20" />
       </div>
     </div>
