@@ -6,7 +6,7 @@ import Button from "../base/button";
 const HomeDescription = () => {
   return (
     <div className="flex">
-      <Image src="/description_section.png" alt="" width={600} height={600} />
+      <Image src="/images/description_section.png" alt="" width={600} height={600} />
       <div className="pl-20">
         <Paragraph className="font-brineue-bold text-[3rem] leading-[3.5rem]  text-secondary-blue">
           Pakai Aplikasi BRIMerchant
