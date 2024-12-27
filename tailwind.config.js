@@ -25,9 +25,16 @@ module.exports = {
       fontFamily: {
         "brineue-bold": ["BRINeueFaceBold", "sans-serif"],
         "brineue-regular": ["BRINeueFaceRegular", "sans-serif"],
+        "pp-right-grotesk": ["PPRightGrotesk", "sans-serif"],
+        "pp-right-grotesk-medium": ["PPRightGrotesk Medium", "sans-serif"],
+        "pp-right-grotesk-compact-black": [
+          "PPRightGrotesk Compact Black",
+          "sans-serif",
+        ],
+        poppins: ["Poppins", "sans-serif"],
       },
       backgroundImage: {
-        pattern: "url('/pattern_background.svg')",
+        pattern: "url('/images/pattern_background.svg')",
       },
     },
   },

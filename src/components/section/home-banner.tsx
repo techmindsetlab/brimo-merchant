@@ -6,7 +6,7 @@ const HomeBanner = () => {
   return (
     <div className="flex bg-pattern">
       <div className="w-[50%] flex flex-col justify-center">
-        <h1 className="font-brineue-bold  text-[4.5rem] leading-[4.5rem]  text-secondary-blue">
+        <h1 className="font-brineue-bold  text-[4rem] leading-[4rem]  text-secondary-blue">
           Dagangan lancar <br />
           transaksi praktis <br />
           cairnya gampang
@@ -20,7 +20,7 @@ const HomeBanner = () => {
         />
       </div>
 
-      <div className="flex w-[50%]">
+      <div className="flex z-20 w-[50%]">
         <Image
           src="/dummy_hero_phone.png"
           alt=""

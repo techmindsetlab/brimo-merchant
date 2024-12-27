@@ -6,3 +6,11 @@ export const navLink = [
     { name: "FAQ", href: "/faq" },
     { name: "Kontak", href: "/kontak" },
 ];
+
+export const merchantIcon = [
+    "/icons/pertamina_dummy.svg",
+    "/icons/pertamina_dummy.svg",
+    "/icons/pertamina_dummy.svg",
+    "/icons/pertamina_dummy.svg",
+    "/icons/pertamina_dummy.svg",
+]

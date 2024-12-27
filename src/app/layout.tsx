@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/base/navbar";
+import Footer from "@/components/base/footer";
 
 export const metadata: Metadata = {
   title: "BRImo Merchant",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className={`antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
