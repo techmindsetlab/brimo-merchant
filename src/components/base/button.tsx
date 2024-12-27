@@ -1,13 +1,14 @@
 import React from "react";
 
 interface Props {
-  buttonText: string;
+  buttonText: string | React.ReactNode;
+  onClick?: () => void;
   className: string;
 }
 
-const button = ({ buttonText, className }: Props) => {
+const button = ({ buttonText, className, onClick }: Props) => {
   return (
-    <button type="button" className={className}>
+    <button onClick={onClick} type="button" className={className}>
       {buttonText}
     </button>
   );

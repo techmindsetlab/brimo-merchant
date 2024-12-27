@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import 'react-multi-carousel/lib/styles.css';
 import Navbar from "@/components/base/navbar";
 import Footer from "@/components/base/footer";
 

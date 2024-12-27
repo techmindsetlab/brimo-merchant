@@ -82,12 +82,19 @@ const Footer = () => {
             Sekarang!
           </Paragraph>
         </div>
-        <div className="pb-44 z-10 bottom-12">
+        <div className="pb-44 relative justify-center top-4 w-[45%] flex z-10 bottom-12">
           <Button
             buttonText={"Download Sekarang"}
             className={
-              "rounded-3xl z-10 w-fit mt-6 hidden md:block text-md px-6 py-2 text-primary-white text-center bg-accent-orange"
+              "rounded-3xl z-10 w-fit h-fit mt-6 hidden md:block text-md px-6 py-2 text-primary-white text-center bg-accent-orange"
             }
+          />
+          <Image
+            src="/icons/download_arrow.svg"
+            alt=""
+            className="absolute rotate-12 right-16 top-10"
+            width={150}
+            height={150}
           />
         </div>
       </div>

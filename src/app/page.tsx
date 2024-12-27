@@ -2,8 +2,10 @@ import BannerDivider from "@/components/section/custom-rectangle";
 import HomeBanner from "@/components/section/home-banner";
 import HomeDescription from "@/components/section/home-description";
 import HomeFeature from "@/components/section/home-feature";
+import HomePromo from "@/components/section/home-promo";
 import MerchantFeatures from "@/components/section/merchant-features";
 import { merchantIcon } from "@/helpers/const";
+import { promoDummy } from "@/helpers/dummy";
 import Image from "next/image";
 
 export default function Home() {
@@ -38,6 +40,7 @@ export default function Home() {
         <HomeFeature />
       </div>
       <MerchantFeatures />
+      <HomePromo data={promoDummy} />
     </div>
   );
 }

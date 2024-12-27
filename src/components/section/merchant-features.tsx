@@ -13,7 +13,7 @@ const MerchantFeatures = () => {
         height={1000}
         className="w-full h-full object-cover absolute rounded-t-[3rem]"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-secondary-blue/80 rounded-t-[3rem]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-secondary-blue/100 rounded-t-[3rem]" />
 
       <div className="relative p-14">
         <div className="bg-[#C4C4C4]/20 border border-primary-white h-[30rem] px-24 py-12 backdrop-blur-md shadow-lg rounded-[3rem]">
