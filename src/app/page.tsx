@@ -3,10 +3,13 @@ import HomeBanner from "@/components/section/home-banner";
 import HomeDescription from "@/components/section/home-description";
 import HomeFeature from "@/components/section/home-feature";
 import HomePromo from "@/components/section/home-promo";
-import MerchantFeatures from "@/components/section/merchant-features";
+import MerchantFeatures from "@/components/section/home-merchant-features";
 import { merchantIcon } from "@/helpers/const";
-import { promoDummy } from "@/helpers/dummy";
+import { FAQDummy, promoDummy } from "@/helpers/dummy";
 import Image from "next/image";
+import HomeBenefit from "@/components/section/home-benefit";
+import HomeMerchantStep from "@/components/section/home-merchant-step";
+import HomeFAQ from "@/components/section/home-faq";
 
 export default function Home() {
   return (
@@ -41,6 +44,11 @@ export default function Home() {
       </div>
       <MerchantFeatures />
       <HomePromo data={promoDummy} />
+      <div className="max-w-screen-xl mt-24 px-4 mx-auto">
+        <HomeBenefit />
+        <HomeMerchantStep containerStyle={"mt-24"} />
+        <HomeFAQ items={FAQDummy} />
+      </div>
     </div>
   );
 }

@@ -24,7 +24,7 @@ const HomeDescription = () => {
         <Button
           buttonText={"Lihat Selengkapnya"}
           className={
-            "rounded-3xl w-fit mt-8 font-bold text-sm px-6 py-3 text-primary-white text-center bg-accent-orange"
+            "rounded-3xl font-jakarta w-fit mt-8 font-bold text-sm px-6 py-3 text-primary-white text-center bg-accent-orange"
           }
         />
         <div className="flex justify-between mt-8">

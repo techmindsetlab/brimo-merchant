@@ -24,7 +24,7 @@ const HomeFeature = () => {
         <Button
           buttonText={"Lihat Selengkapnya"}
           className={
-            "rounded-3xl w-fit mt-8 font-bold text-sm px-6 py-3 text-primary-white text-center bg-accent-orange"
+            "rounded-3xl w-fit font-jakarta mt-8 font-bold text-sm px-6 py-3 text-primary-white text-center bg-accent-orange"
           }
         />
       </div>

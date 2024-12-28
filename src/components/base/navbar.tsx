@@ -1,26 +1,13 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { navLink } from "@/helpers/const";
 import Button from "./button";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <nav
-      className={`fixed w-full z-40 top-0 start-0 transition-all duration-300 ${
-        isScrolled ? "bg-primary-white/60 backdrop-blur-md" : "bg-transparent"
-      }`}
+      className={`fixed w-full z-40 top-0 start-0 transition-all duration-300 bg-primary-white/40 backdrop-blur-md bg-gradient-to-b from-primary-white/60 to-transparent`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
@@ -38,7 +25,7 @@ const Navbar = () => {
           <Button
             buttonText={"Daftar Sekarang"}
             className={
-              "rounded-3xl hidden md:block text-sm px-6 py-2 text-primary-white text-center bg-accent-orange"
+              "rounded-3xl hidden md:block text-sm px-6 py-2 text-primary-white text-center font-jakarta bg-accent-orange"
             }
           />
           <button

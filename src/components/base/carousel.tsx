@@ -1,22 +1,16 @@
 "use client";
 import React from "react";
 import Carousel from "react-multi-carousel";
-import Image from "next/image";
-import Paragraph from "./paragraph";
 
 interface Props {
-  data: {
-    id: number;
-    title: string;
-    image: string;
-  }[];
-  carouselRef: React.RefObject<Carousel | null>;
+  children?: React.ReactNode;
+  ref: React.RefObject<Carousel | null>;
 }
 
-const PromoCarousel = ({ data, carouselRef }: Props) => {
+const CarouselItem = ({ children, ref }: Props) => {
   return (
     <Carousel
-      ref={carouselRef}
+      ref={ref}
       additionalTransfrom={0}
       arrows={false}
       autoPlaySpeed={3000}
@@ -69,14 +63,9 @@ const PromoCarousel = ({ data, carouselRef }: Props) => {
       slidesToSlide={1}
       swipeable
     >
-      {data.map((item) => (
-        <div key={item.id} className="mr-4 h-[18rem]">
-          <Image src={item.image} alt="" width={1000} height={1000} />
-          <Paragraph className="font-brineue-bold mt-4">{item.title}</Paragraph>
-        </div>
-      ))}
+      {children}
     </Carousel>
   );
 };
 
-export default PromoCarousel;
+export default CarouselItem;

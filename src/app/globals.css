@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root {
   --background: #fafafa;
   --foreground: #171717;
@@ -27,6 +25,20 @@
   font-family: "BRINeueFaceBold";
   src: url("/fonts/BRINeueFaceBold.ttf") format("truetype");
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blanquotey";
+  src: url("/fonts/Blanquotey.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JakartaSansRegular";
+  src: url("/fonts/PlusJakartaSansRegular.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
 }
 

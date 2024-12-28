@@ -3,8 +3,9 @@ import React, { useRef } from "react";
 import Paragraph from "../base/paragraph";
 import Button from "../base/button";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import PromoCarousel from "../base/carousel";
+import CarouselItem from "../base/carousel";
 import Carousel from "react-multi-carousel";
+import Image from "next/image";
 
 interface Props {
   data: {
@@ -30,7 +31,7 @@ const HomePromo = ({ data }: Props) => {
   };
   return (
     <div className="bg-secondary-blue">
-      <div className="max-w-screen-xl pt-12 mx-auto">
+      <div className="max-w-screen-xl px-4 pt-12 mx-auto">
         <Paragraph className="font-brineue-bold text-5xl">
           Promo Special/Hot Over
         </Paragraph>
@@ -60,13 +61,22 @@ const HomePromo = ({ data }: Props) => {
           </div>
         </div>
         <div className="mt-6">
-          <PromoCarousel data={data} carouselRef={carouselRef} />
+          <CarouselItem ref={carouselRef}>
+            {data.map((item) => (
+              <div key={item.id} className="mr-4 h-[18rem]">
+                <Image src={item.image} alt="" width={1000} height={1000} />
+                <Paragraph className="font-brineue-bold mt-4">
+                  {item.title}
+                </Paragraph>
+              </div>
+            ))}
+          </CarouselItem>
         </div>
         <div className="flex mt-4 pb-8 justify-center">
           <Button
             buttonText={"Lihat Semua Promo"}
             className={
-              "border font-brineue-regular border-primary-white bg-accent-orange border-opacity-15 h-fit rounded-full py-2 px-4"
+              "border font-jakarta border-primary-white bg-accent-orange border-opacity-15 h-fit rounded-full py-2 px-4"
             }
           />
         </div>

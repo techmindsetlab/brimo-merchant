@@ -10,16 +10,26 @@ module.exports = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        'card': '0px 15px 25px 1px rgba(29, 52, 61, 0.05)', 
+      },
+      boxShadow: {
+        'accordion': '0px 10px 30px 0px rgba(0, 0, 0, 0.05)',
+      },
       colors: {
         primary: {
           blue: "#06549D",
           white: "#FAFAFA",
+          black: "#161627",
         },
         secondary: {
           blue: "#15A6DF",
         },
         accent: {
           orange: "#F7821B",
+        },
+        tertiary: {
+          blue: "#DDEFFC",
         },
       },
       fontFamily: {
@@ -32,6 +42,8 @@ module.exports = {
           "sans-serif",
         ],
         poppins: ["Poppins", "sans-serif"],
+        blanquotey: ["Blanquotey", "sans-serif"],
+        jakarta: ["JakartaSansRegular", "sans-serif"],
       },
       backgroundImage: {
         pattern: "url('/images/pattern_background.svg')",
