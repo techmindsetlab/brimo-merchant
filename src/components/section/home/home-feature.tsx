@@ -29,7 +29,7 @@ const HomeFeature = () => {
       <div className="flex flex-col w-[25%] justify-center items-center">
         <div className="w-[80%] z-10 -mb-10">
           <Image
-            src="/icons/people_stars.svg"
+            src="/icons/phone_love.svg"
             className="w-full"
             alt=""
             width={100}
@@ -50,7 +50,7 @@ const HomeFeature = () => {
       <div className="flex flex-col w-[25%] justify-center items-center">
         <div className="w-[80%] z-10 -mb-10">
           <Image
-            src="/icons/people_stars.svg"
+            src="/icons/phone_comment.svg"
             className="w-full"
             alt=""
             width={100}
@@ -71,7 +71,7 @@ const HomeFeature = () => {
       <div className="flex flex-col w-[25%] justify-center items-center">
         <div className="w-[80%] z-10 -mb-10">
           <Image
-            src="/icons/people_stars.svg"
+            src="/icons/phone_hand.svg"
             className="w-full"
             alt=""
             width={100}

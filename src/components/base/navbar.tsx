@@ -4,6 +4,7 @@ import Image from "next/image";
 import { navLink } from "@/helpers/const";
 import Button from "./button";
 import Link from "next/link";
+import FadeInFromBottom from "../animation/fadeInBottom";
 
 const Navbar = () => {
   return (
@@ -11,17 +12,20 @@ const Navbar = () => {
       className={`fixed w-full z-40 top-0 start-0 transition-all duration-300 bg-primary-white`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link
-          href="/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <Image
-            src="/images/brimo_merchant_logo.png"
-            width={150}
-            height={150}
-            alt="BRIMO MERCHANT LOGO"
-          />
-        </Link>
+        <FadeInFromBottom duration={200} className="nav-logo">
+          <Link
+            href="/"
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <Image
+              src="/images/brimo_merchant_logo.png"
+              width={150}
+              height={150}
+              alt="BRIMO MERCHANT LOGO"
+            />
+          </Link>
+        </FadeInFromBottom>
+
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <Button
             buttonText={"Daftar Sekarang"}
@@ -59,7 +63,11 @@ const Navbar = () => {
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 ">
             {navLink.map((item, index) => (
-              <li className="" key={index}>
+              <FadeInFromBottom
+                duration={200 * index}
+                className={`nav-link-${index}`}
+                key={index}
+              >
                 <Link
                   href={item.href}
                   className="py-2 px-3 font-brineue-bold rounded md:bg-transparent md:text-primary-blue md:p-0"
@@ -67,7 +75,7 @@ const Navbar = () => {
                 >
                   {item.name}
                 </Link>
-              </li>
+              </FadeInFromBottom>
             ))}
           </ul>
         </div>

@@ -7,17 +7,25 @@ export const navLink = [
     { name: "Kontak", href: "/kontak" },
 ];
 
-export const EDCData = [
-    { title: "Semua Jenis Kartu", icon: "/icons/jenis_kartu.svg", description: "Menerima semua jenis kartu, Mastercard & Visa, kartu kredit, debit, private label BRI (GPN) dan kartu BRIzzi." },
-    { title: "Pembayaran H+1", icon: "/icons/pembayaran.svg", description: "Pembayaran di lakukan H+1, setelah proses settlement dilakukan oleh pihak merchant termasuk hari libur." },
-    { title: "Menambah Jumlah Transaksi", icon: "/icons/jumlah_transaksi.svg", description: "Menambah jumlah transaksi merchant, karena merchant dapat melayani transaksi dengan menggunakan kartu." },
-    { title: "Menambah Daya Saing", icon: "/icons/daya_saing.svg", description: "Menambah daya saing merchant dengan merchant yang ada disekitarnya. Karena dapat melayani transaksi tunai dan transaksi dengan menggunakan EDC BRI." },
+export const QRISData = [
+    { title: "Menerima Pembayaran Dari Beragam Bank & E-Wallet", icon: "/icons/qris-1.svg", description: "Buka peluang usaha dengan menerima pembayaran secara non tunai" },
+    { title: "Tanpa Potongan MDR", icon: "/icons/qris-2.svg", description: "Pakai QRIS Usaha Mikro bebas potongan MDR untuk transaksi hingga Rp500ribu" },
+    { title: "Pencairan 4x Sehari", icon: "/icons/qris-3.svg", description: "Arus kas usaha semakin lancar dengan pencairan QRIS 4x dalam sehari" },
+    { title: "Usaha Lebih Tenang", icon: "/icons/qris-4.svg", description: "Terhindar dari modus uang palsu dengan pembayaran secara non tunai" },
+    { title: "Pembayaran Mulai Dari 1 Rupiah", icon: "/icons/qris-5.svg", description: "QRIS dapat digunakan untuk transaksi mulai dari 1 rupiah hingga 10 Juta rupiah" },
 ]
 
-export const statisData = [
-    { title: "Transaksi yang efektif dan efisien", icon: "/icons/transaksi_efektif.svg", description: "Transaksi menjadi lebih efektif dan efisien sehingga dapat memangkas waktu antrian." },
-    { title: "Flexible dengan banyak e-wallet", icon: "/icons/flexible.svg", description: "QRIS dapat diterima oleh seluruh e-wallet dari berbagai metode pembayaran dengan maksimal pembayaran Rp 2.000.000,- per transaksi." },
-    { title: "Mitigasi sendiri resikomu", icon: "/icons/mitigasi.svg", description: "Penyedia aplikasi pembayaran dapat menetapkan batas nominal kumulatif harian dan/atau bulanan atas transaksi QRIS yang dilakukan oleh setiap pengguna QRIS, ditetapkan sesuai mitigasi risiko pengguna." },
+export const QRISDinamis = [
+    { title: "Lebih Pasti", icon: "/icons/qris_dinamis_1.svg", description: "Terhindar dari pembeli salah nominal karena bisa memasukan sendiri nominal yang perlu dibayar pembeli" },
+    { title: "Lebih Mudah", icon: "/icons/qris_dinamis_2.svg", description: "Pembeli tinggal scan QRIS dan tidak perlu memasukan nominal" },
+    { title: "Semakin Tenang", icon: "/icons/qris_dinamis_3.svg", description: "QRIS hanya berlaku satu kali transaksi dengan batas waktu 5 menit" },
+]
+
+export const EDCData = [
+    { title: "Bisnis Naik Kelas Dengan EDC BRI", icon: "/icons/edc_1.svg", description: "Terima pembayaran beragam metode pembayaran" },
+    { title: "Bukti Pembayaran Tercetak", icon: "/icons/edc_2.svg", description: "Cetak bukti pembayaran lebih mudah" },
+    { title: "NFC Payment", icon: "/icons/edc_3.svg", description: "Bayar-bayar tinggal tap dengan menggunakan kartu debit dan kredit contactless" },
+    { title: "Terima Semua Jenis Pembayaran", icon: "/icons/edc_4.svg", description: "Pembayaran dapat dilakukan dari semua jenis kartu debit, kartu kredit, QRIS, dan BRIZZI" },
 ]
 
 export const stepMerchant = [

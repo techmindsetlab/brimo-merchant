@@ -2,14 +2,14 @@
 import React, { useState } from "react";
 import Filter from "../../base/filter";
 import Paragraph from "../../base/paragraph";
-import Image from "next/image";
-import { EDCData, statisData } from "@/helpers/const";
 import Button from "../../base/button";
+import EDCSection from "./edc-section";
+import QRISDinamisSection from "./qris-dinamis-section";
+import QRISSection from "./qris-section";
 
 const HomeBenefit = () => {
   const [activeFilter, setActiveFilter] = useState<number>(0);
   const filter = ["EDC", "QRIS Dinamis", "QRIS"];
-  const filteredData = activeFilter === 0 ? EDCData : statisData;
   return (
     <div>
       <div className="flex flex-col items-center justify-center">
@@ -23,7 +23,9 @@ const HomeBenefit = () => {
           className="text-3xl text-primary-blue mt-8 font-bold"
         >
           {activeFilter === 0
-            ? "Kenapa harus Mendaftar EDC + QRIS Dinamis BRI"
+            ? "Kenapa harus Mendaftar EDC BRI"
+            : activeFilter === 1
+            ? "Kenapa harus Mendaftar QRIS Dinamis BRI"
             : "Kenapa harus Mendaftar QRIS Statis"}
         </Paragraph>
         {activeFilter === 0 ? (
@@ -32,6 +34,13 @@ const HomeBenefit = () => {
             menerima transaksi pembayaran dengan menggunakan Kartu
             <br /> Debit, Kartu Kredit, Kartu Prepaid, serta QRIS yang tentunya
             memudahkan transaksi, lebih cepat, dan terjaga keamanannya.
+          </Paragraph>
+        ) : activeFilter === 1 ? (
+          <Paragraph className="text-primary-blue text-center font-brineue-regular mt-2">
+            Mesin Electronic Data Capture (EDC) yang dapat digunakan untuk
+            menerima transaksi pembayaran dengan menggunakan Kartu <br /> Debit,
+            Kartu Kredit, Kartu Prepaid, serta QRIS yang tentunya memudahkan
+            transaksi, lebih cepat, dan terjaga keamanannya.
           </Paragraph>
         ) : (
           <Paragraph className="text-primary-blue text-center font-brineue-regular mt-2">
@@ -42,27 +51,13 @@ const HomeBenefit = () => {
           </Paragraph>
         )}
       </div>
-      <div className="flex gap-3 mt-6 justify-center">
-        {filteredData.map((item, index) => (
-          <div key={index} className="flex flex-col w-[25%] items-center">
-            <Image
-              width={250}
-              height={250}
-              src={item.icon}
-              className="z-10"
-              alt=""
-            />
-            <div className="bg-primary-blue -mt-20 text-center pt-20 h-[17rem] px-4 rounded-2xl">
-              <Paragraph className="text-primary-white text-xl font-brineue-bold">
-                {item.title}
-              </Paragraph>
-              <Paragraph className="text-primary-white mt-2">
-                {item.description}
-              </Paragraph>
-            </div>
-          </div>
-        ))}
-      </div>
+      {activeFilter === 0 ? (
+        <EDCSection />
+      ) : activeFilter === 1 ? (
+        <QRISDinamisSection />
+      ) : (
+        <QRISSection />
+      )}
       <div className="flex justify-center">
         <Button
           buttonText={"Lihat Semua"}
