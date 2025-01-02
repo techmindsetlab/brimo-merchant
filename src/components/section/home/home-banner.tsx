@@ -47,7 +47,7 @@ const HomeBanner = () => {
             height={300}
           />
         </FadeInRight>
-        <FadeInRight style="z-10 absolute right-20" className="person-image" duration={1200}>
+        <FadeInRight style="z-10 absolute right-20 mt-4" className="person-image" duration={1200}>
           <Image
             src="/images/dummy_hero_person.png"
             alt=""
