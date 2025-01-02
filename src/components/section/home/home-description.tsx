@@ -38,7 +38,7 @@ const HomeDescription = () => {
         <Button
           buttonText={"Lihat Selengkapnya"}
           className={
-            "rounded-3xl font-jakarta w-fit mt-8 text-sm px-6 py-3 text-primary-white text-center bg-primary-blue"
+            "rounded-3xl font-jakarta w-fit mt-8 text-md px-6 py-3 text-primary-white text-center bg-primary-blue"
           }
         />
         <div className="grid lg:flex lg:justify-between mt-8">
