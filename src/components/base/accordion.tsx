@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Paragraph from "./paragraph";
 import { IoMdArrowDropdown } from "react-icons/io";
+import FadeInUp from "../animation/fadeInUp";
 
 interface AccordionProps {
   items: {
@@ -27,11 +28,13 @@ const Accordion = ({ items, allowMultiple = false }: AccordionProps) => {
   };
 
   return (
-    <div className="accordion px-16">
+    <div className="accordion">
       {items.map((item, index) => (
-        <div
+        <FadeInUp
           key={index}
-          className="bg-primary-white border mb-4 rounded-[5px] border-gray-100 shadow-accordion overflow-hidden transition-all duration-300"
+          duration={100 * index}
+          className={`faq-${index}`}
+          style="bg-primary-white border mb-4 rounded-[5px] border-gray-100 shadow-accordion overflow-hidden transition-all duration-300"
         >
           <button
             className="w-full text-left p-4 flex justify-between items-center"
@@ -57,7 +60,7 @@ const Accordion = ({ items, allowMultiple = false }: AccordionProps) => {
           >
             <div className="p-4 text-gray-600">{item.content}</div>
           </div>
-        </div>
+        </FadeInUp>
       ))}
     </div>
   );

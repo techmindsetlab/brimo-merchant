@@ -65,11 +65,11 @@ const Footer = () => {
 
         <div className="absolute inset-0 bg-[#DDEFFC] opacity-80 rounded-t-[3rem]" />
 
-        <Paragraph className="text-accent-orange z-10 pt-44 text-4xl font-brineue-bold">
+        <Paragraph className="text-accent-orange z-10 pt-44 text-lg lg:text-4xl font-brineue-bold">
           Biar #MakinGampangLancarkanBisnis
         </Paragraph>
         <div className="flex items-center z-10 gap-3">
-          <Paragraph className="text-accent-orange text-4xl font-brineue-bold">
+          <Paragraph className="text-accent-orange text-lg lg:text-4xl font-brineue-bold">
             Download
           </Paragraph>
           <Image
@@ -78,7 +78,7 @@ const Footer = () => {
             width={200}
             height={200}
           />
-          <Paragraph className="text-accent-orange text-4xl font-brineue-bold">
+          <Paragraph className="text-accent-orange text-lg lg:text-4xl font-brineue-bold">
             Sekarang!
           </Paragraph>
         </div>

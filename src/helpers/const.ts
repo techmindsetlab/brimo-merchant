@@ -1,5 +1,5 @@
 export const navLink = [
-    { name: "Tentang Merchant", href: "/tenang-merchant" },
+    { name: "Tentang Merchant", href: "/tentang-merchant" },
     { name: "Produk", href: "/produk" },
     { name: "Jadi Merchant", href: "/jadi-merchant" },
     { name: "Bantuan", href: "/bantuan" },

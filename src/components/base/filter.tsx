@@ -13,13 +13,13 @@ const Filter = ({ filter, activeFilter, setActiveFilter }: Props) => {
   };
 
   return (
-    <div className="border border-accent-orange flex gap-1 w-fit p-2.5 rounded-[3rem]">
+    <div className="border border-primary-blue flex gap-1 w-fit p-2.5 rounded-[3rem]">
       {filter.map((item, index) => (
         <Button
           key={index}
-          className={`py-2.5 px-4 w-fit border rounded-3xl ${
+          className={`py-2.5 px-6 w-fit border rounded-3xl ${
             activeFilter === index
-              ? "bg-accent-orange border-accent-orange text-white"
+              ? "bg-primary-blue border-primary-blue font-bold text-white"
               : "bg-transparent border-transparent text-primary-black"
           }`}
           onClick={() => handleFilterClick(index)}

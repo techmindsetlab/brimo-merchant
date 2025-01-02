@@ -10,11 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      dropShadow: {
-        'card': '0px 15px 25px 1px rgba(29, 52, 61, 0.05)', 
-      },
       boxShadow: {
-        'accordion': '0px 10px 30px 0px rgba(0, 0, 0, 0.05)',
+        accordion: "0px 10px 30px 0px rgba(0, 0, 0, 0.05)",
+        card: "0px 8px 10px 1px rgba(29, 52, 61, 0.05)",
       },
       colors: {
         primary: {
@@ -47,6 +45,8 @@ module.exports = {
       },
       backgroundImage: {
         pattern: "url('/images/pattern_background.svg')",
+        "blue-wavy": "url('/images/bg_feature.svg')",
+        "secondary-blue-wavy": "url('/images/bg_merchant_step.svg')",
       },
     },
   },
