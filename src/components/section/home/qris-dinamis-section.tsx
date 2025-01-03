@@ -6,12 +6,12 @@ import FadeInFromBottom from "@/components/animation/fadeInBottom";
 
 const QRISDinamisSection = () => {
   return (
-    <div className="flex gap-3 mt-6 justify-center">
+    <div className="grid grid-cols-2 lg:flex gap-3 mt-6 justify-center">
       {QRISDinamis.map((item, index) => (
         <FadeInFromBottom
           key={index}
           duration={400 * index}
-          style="flex flex-col w-[25%] items-center"
+          style="flex flex-col lg:w-[25%] items-center"
           className={`qris-dinamis-${index}`}
         >
           <Image
@@ -21,7 +21,7 @@ const QRISDinamisSection = () => {
             className="z-10"
             alt=""
           />
-          <div className="bg-primary-blue -mt-16 text-center pt-20 h-[17rem] px-4 rounded-2xl">
+          <div className="bg-primary-blue -mt-16 text-center pt-14 lg:pt-20 h-[17rem] px-4 rounded-2xl">
             <Paragraph className="text-primary-white text-xl font-brineue-bold">
               {item.title}
             </Paragraph>

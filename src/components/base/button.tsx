@@ -8,7 +8,7 @@ interface Props {
 
 const button = ({ buttonText, className, onClick }: Props) => {
   return (
-    <button onClick={onClick} type="button" className={className}>
+    <button onClick={onClick} className={className}>
       {buttonText}
     </button>
   );

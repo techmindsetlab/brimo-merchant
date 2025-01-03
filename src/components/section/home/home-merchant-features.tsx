@@ -5,12 +5,21 @@ import Button from "../../base/button";
 
 const MerchantFeatures = () => {
   return (
-    <div className="relative mt-20 bg-blue-wavy bg-no-repeat">
-      <div className="relative mx-8 px-16 py-36">
+    <div className="relative mt-20 bg-blue-wavy bg-cover bg-no-repeat">
+      <div className="relative mx-8 px-16 xl-wide:py-56 py-36">
         <div className="h-[30rem] px-24 py-14">
-          <Paragraph className="font-brineue-bold text-4xl text-center text-primary-white">
-            Fitur BRIMerchant
-          </Paragraph>
+          <div className="flex justify-center gap-2 items-center">
+            <Paragraph className="font-brineue-bold ml-6 text-4xl text-primary-white">
+              Fitur
+            </Paragraph>
+            <Image
+              src="/icons/bri_merchant_white.svg"
+              alt=""
+              width={220}
+              height={220}
+            />
+          </div>
+
           <Paragraph className="text-center text-sm mt-4 text-primary-white">
             Fitur utama Aplikasi BRIMerchant
           </Paragraph>

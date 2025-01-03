@@ -6,12 +6,12 @@ import FadeInFromBottom from "@/components/animation/fadeInBottom";
 
 const QRISSection = () => {
   return (
-    <div className="flex gap-3 mt-12 justify-center">
+    <div className="grid grid-cols-2 lg:flex gap-3 mt-12 justify-center">
       {QRISData.map((item, index) => (
         <FadeInFromBottom
           key={index}
           duration={400 * index}
-          style="flex flex-col w-[25%] items-center"
+          style="flex flex-col lg:w-[25%] items-center"
           className={`qris-item-${index}`}
         >
           <Image
@@ -21,7 +21,7 @@ const QRISSection = () => {
             className="z-10"
             alt=""
           />
-          <div className="bg-primary-blue -mt-20 text-center pt-20 h-[14rem] px-4 rounded-2xl">
+          <div className="bg-primary-blue -mt-16 lg:-mt-20 text-center pt-16 lg:pt-20 h-[14rem] px-4 rounded-2xl">
             <Paragraph className="text-primary-white text-md font-brineue-bold">
               {item.title}
             </Paragraph>

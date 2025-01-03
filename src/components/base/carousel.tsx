@@ -15,7 +15,7 @@ const CarouselItem = ({ children, ref }: Props) => {
       arrows={false}
       autoPlaySpeed={3000}
       centerMode={false}
-      className="h-[26rem]"
+      className=" lg:h-[23rem]"
       containerClass="container-with-dots"
       dotListClass=""
       draggable

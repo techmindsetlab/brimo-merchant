@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xl-wide': '1715px',
+      },
       boxShadow: {
         accordion: "0px 10px 30px 0px rgba(0, 0, 0, 0.05)",
         card: "0px 8px 10px 1px rgba(29, 52, 61, 0.05)",

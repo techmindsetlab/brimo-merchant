@@ -6,12 +6,12 @@ import FadeInFromBottom from "@/components/animation/fadeInBottom";
 
 const EDCSection = () => {
   return (
-    <div className="flex gap-3 mt-6 justify-center">
+    <div className="grid grid-cols-2 lg:flex gap-3 mt-6 justify-center">
       {EDCData.map((item, index) => (
         <FadeInFromBottom
           key={index}
           duration={400 * index}
-          style="flex flex-col w-[25%] items-center"
+          style="flex flex-col lg:w-[25%] items-center"
           className={`edc-item-${index}`}
         >
           <Image
@@ -21,7 +21,7 @@ const EDCSection = () => {
             className="z-10"
             alt=""
           />
-          <div className="bg-primary-blue w-full -mt-12 text-center pt-20 h-[14rem] px-4 rounded-2xl">
+          <div className="bg-primary-blue w-full -mt-12 text-center pt-12 lg:pt-20 h-[14rem] px-4 rounded-2xl">
             <Paragraph className="text-primary-white text-lg font-brineue-bold">
               {item.title}
             </Paragraph>

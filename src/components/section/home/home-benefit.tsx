@@ -11,7 +11,7 @@ const HomeBenefit = () => {
   const [activeFilter, setActiveFilter] = useState<number>(0);
   const filter = ["EDC", "QRIS Dinamis", "QRIS"];
   return (
-    <div>
+    <div className="px-4 lg:px-0">
       <div className="flex flex-col items-center justify-center">
         <Filter
           filter={filter}
@@ -20,7 +20,7 @@ const HomeBenefit = () => {
         />
         <Paragraph
           fontUbuntu
-          className="text-3xl text-primary-blue mt-8 font-bold"
+          className="text-3xl text-center text-primary-blue mt-8 font-bold"
         >
           {activeFilter === 0
             ? "Kenapa harus Mendaftar EDC BRI"
